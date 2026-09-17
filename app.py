@@ -50,17 +50,83 @@ triangle(90)
 
 turtle.done() """
 
-import turtle
+""" import turtle
 from turtle import *
 t = Turtle()
 
 t.shape('turtle')
 for i in range(60):
     def square(x):
-        for i in range(4): 
+        for i in range(4):
             t.forward(x)
             t.left(90)
         t.left(5)
     square(100)
+
+turtle.done() """
+
+""" import turtle
+from turtle import *
+t=Turtle()
+
+t.shape('turtle')
+t.sidelength = 100
+rotate = 90
+def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.left(y)
+square(100,90)
+
+def addSquares(iRange):
+    length = 25
+    for i in range(iRange):
+        square(length, 90)
+        length += 25
+addSquares(5)
+
+turtle.done() """
+
+""" import turtle
+from turtle import *
+t=Turtle()
+
+t.shape('turtle')
+t.sidelength = 100
+rotate = 90
+def square(x,y):
+    for i in range(4):
+        t.forward(x)
+        t.right(y)
+    t.right(5)
+square(5,90)
+
+def addSquares(iRange):
+    length = 5
+    for i in range(iRange):
+        square(length, 90)
+        length += 5
+addSquares(60)
+
+turtle.done() """
+
+import turtle
+from turtle import *
+t=Turtle()
+
+t.shape('turtle')
+def shape(x,y):
+    for i in range(5):
+        t.forward(x)
+        t.right(y)
+    t.right(5)
+shape(5,144)
+
+def addShape(iRange):
+    length = 5
+    for i in range(iRange):
+        shape(length, 144)
+        length += 5
+addShape(60)
 
 turtle.done()
